@@ -20,7 +20,7 @@ public class Utilities {
 		return firstValue * secondValue;
 	}
 
-	private double dividir(double firstValue, double secondValue){
+	public double dividir(double firstValue, double secondValue){
 
 		if(secondValue==0){
 			System.out.println("Numero invalido");
