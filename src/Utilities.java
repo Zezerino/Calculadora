@@ -5,7 +5,7 @@ public class Utilities {
 	private double firstValue;
 	private double secondValue;
 
-	private double soma(double firstValue, double secondValue){
+	public double soma(double firstValue, double secondValue){
 
 		return firstValue + secondValue;
 	}
