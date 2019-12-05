@@ -36,6 +36,50 @@ class BrunoTest {
 	}
 	
 	
+	@Nested
+	@DisplayName("quando testamos a multiplica誽o, ")
+	class Mult{
+		
+		@Test
+		@DisplayName("1演est result positivo")
+		public void positivo() {
+			assertEquals(10, calc.multiplicar(5, 2), "O resultado deve ser igual a multiplica誽o dos argumentos");
+	
+		}
+		
+		@Test
+		@DisplayName("2演est result positivo")
+		public void positivo2() {
+			assertEquals(10, calc.multiplicar(-5, -2), "O resultado deve ser igual a multiplica誽o dos argumentos");
+	
+		}
+		
+		@Test
+		@DisplayName("1演este result = 0")
+		public void igualZero() {
+			assertEquals(0, calc.multiplicar(19028390, 0), "O resultado deve ser igual a multiplica誽o dos argumentos");
+		}
+		
+		@Test
+		@DisplayName("2演este result = 0")
+		public void igualZero2() {
+			assertEquals(0, calc.multiplicar(0, 0), "O resultado deve ser igual a multiplica誽o dos argumentos");
+		}
+		
+		@Test
+		@DisplayName("1演este result negativo")
+		public void negativo() {
+			assertEquals(-50, calc.multiplicar(-5, 10), "O resultado deve ser igual a multiplica誽o dos argumentos");
+		}
+		
+		@Test
+		@DisplayName("1演este result negativo")
+		public void negativo2() {
+			assertEquals(-50, calc.multiplicar(5, -10), "O resultado deve ser igual a multiplica誽o dos argumentos");
+		}
+		
+	}
+	
 	
 	@BeforeEach
 	public void initialize() {
