@@ -5,22 +5,22 @@ public class Utilities {
 	private double firstValue;
 	private double secondValue;
 
-	private double soma(double firstValue, double secondValue){
+	public double soma(double firstValue, double secondValue){
 
 		return firstValue + secondValue;
 	}
 
-	private double subtrair(double firstValue, double secondValue){
+	public double subtrair(double firstValue, double secondValue){
 
 		return firstValue - secondValue;
 	}
 
-	private double multiplicar(double firstValue, double secondValue){
+	public double multiplicar(double firstValue, double secondValue){
 
 		return firstValue * secondValue;
 	}
 
-	private double dividir(double firstValue, double secondValue){
+	public double dividir(double firstValue, double secondValue){
 
 		if(secondValue==0){
 			System.out.println("Numero invalido");
